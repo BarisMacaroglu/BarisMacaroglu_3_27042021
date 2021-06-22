@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    /* font-family: 'Shrikhand', cursive; */
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+#item-1{
+    display: flex;
+    border: 3px solid blue;
+}
+
+#item-1-sub {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    border: 2px solid red;
+}

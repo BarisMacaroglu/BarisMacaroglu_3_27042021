@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Shrikhand', cursive; */
+}
+
+img {
+    width: 100%;
+    // height: 100%;
+    // object-fit: contain;
+    // width: auto;
+    // height: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+$primary-color : #9356DC;
+$secondary-color : #FF79DA;
+$tertiary-color : #99E2D0;
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    .header__logo {
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #E2E2E2;
+    padding: 12px 0;
+    .location__icon {
+        margin-right: 12px;
+    }
+}
+
+.exploration__container {
+    text-align: center;
+    padding: 20px;
+    background-color: #F1F1F1;
+    .exploration__title {
+        padding: 0 24px;
+    }
+    .exploration__text {
+        padding: 12px 0;
+    }
+    .exploration__button {
+        padding: 14px;
+        margin: 12px auto 24px auto;
+        background-color: $secondary-color;
+        color: white;
+        border-radius: 180px;
+        border-style: none;
+    }
+}
+
+.process__container {
+    padding: 12px;
+    .process__title {
+        padding: 12px 0 12px 0;
+    }
+    .process__steps {
+        // background-color: $tertiary-color;
+        padding: 0 0 0 12px;
+        .process__step {
+            display: flex;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #E2E2E2;
+            border-radius: 12px;
+            background-color: #E2E2E2;
+        }
+        .process__step__number {
+            border: 1px solid $primary-color;
+            color: white;
+            background-color: $primary-color;
+            border-radius: 180px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            margin-left: -24px;
+        }
+        .process__step__icon {
+            width: 24px;
+            height: 24px;
+            padding: 0 16px;
+            color: gray;
+        }
+        .process__step__text {
+            font-weight: bold;
+        }
+        #process__icon--colored {
+            color: $primary-color;
+        }
+    }
+}
+
+.restaurants__container {
+    padding: 24px 12px 24px 12px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    .restaurants__title {
+        padding: 12px 0 12px 0;
+    }
+    .restaurant__cards {
+        padding: 12px 0 24px 0;
+        .restaurant__card {
+            border-radius: 12px;
+            background-color: white;
+            margin-bottom: 16px;
+            .restaurant__card-image {
+                // max-width: 100%;
+                // max-height: 100px;
+                // display: flex;
+                // flex-direction: column;
+                img {
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+                .restaurant__card-new {
+                    background-color: $tertiary-color;
+                    padding: 10px 16px 10px 16px;
+                    color: #048061;
+                    font-weight: bold;
+                    border-radius: 3px;
+                }
+            }
+            .restaurant__card-block {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px;
+                align-items: center;
+                h3 {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+}
+
+.footer__container {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    .footer__logo a {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+    .footer__items {
+        margin: 20px 0 12px 0;
+        .footer__item {
+            display: flex;
+            margin-bottom: 4px;
+            a {
+                color: white;
+            }
+            .footer__item-icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

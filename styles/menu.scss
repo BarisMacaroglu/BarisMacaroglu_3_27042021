@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-
     /* font-family: 'Shrikhand', cursive; */
 }
 
@@ -9,14 +14,174 @@ img {
     height: auto;
 }
 
-#item-1{
-    display: flex;
-    border: 3px solid blue;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-#item-1-sub {
+$primary-color : #9356DC;
+$secondary-color : #FF79DA;
+$tertiary-color : #99E2D0;
+
+header {
     display: flex;
-    width: 300px;
-    justify-content: space-between;
-    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    .header__logo {
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+#menu {
+    background-color: #F2F2F2;
+    img {
+        width: 100%;
+    }
+}
+
+.menu__container {
+    padding: 14px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    position: relative;
+    top: -54px;
+    .menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0 12px 6px;
+        .menu__header--title {
+            font-family: 'Shrikhand', cursive;
+            font-size: 27px;
+        }
+    }
+    .menu__blocks {
+        .menu__block {
+            margin-top: 12px;
+            margin-bottom: 36px;
+            .menu__block--title {
+                margin-left: 6px;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+                position: relative;
+                h2{
+                    font-weight: normal;
+                    font-size: 16px;
+                }
+                h2::after {
+                    content: "";
+                    width: 40px;
+                    height: 3.5px;
+                    background: $tertiary-color;
+                    position: absolute;
+                    // z-index: 20;
+                    left: 0px;
+                    bottom: -8px;
+                  }
+            }
+            .menu__item {
+                display: flex;
+                margin: 12px 0 12px 0;
+                align-items: center;
+                
+                .menu__item--description {
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 12px;
+                    height: 40px;
+                    .menu__item--name {
+                        font-size: 18px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .menu__item--sub {
+                        display: flex;
+                        justify-content: space-between;
+                        .menu__item--detail {
+                            font-size: 14px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-width: 250px;
+                        }
+                        .menu__item--price {
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-right: 12px;
+                            margin-left: 12px;
+                        }
+                    }
+                }
+                .menu__checkbox {
+                    display: none;
+                }
+            }
+        }
+    }
+    .menu__button {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 -12px 0;
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            padding: 12px;
+            width: 53%;
+            max-width: 250px;
+            font-size: 16px;
+            background-color: $secondary-color;
+            color: white;
+            border-radius: 36px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__container {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    .footer__logo a {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+    .footer__items {
+        margin: 20px 0 12px 0;
+        .footer__item {
+            display: flex;
+            margin-bottom: 4px;
+            a {
+                color: white;
+            }
+            .footer__item-icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
 }

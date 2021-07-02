@@ -74,9 +74,19 @@ header {
         }
     }
     .menu__blocks {
+        #block-1 {
+            animation: slide-up 500ms 150ms both ease-in-out;
+        }
+        #block-2 {
+            animation: slide-up 1000ms 200ms both ease-in-out;
+        }
+        #block-3 {
+            animation: slide-up 1500ms 250ms both ease-in-out;
+        }
         .menu__block {
             margin-top: 12px;
             margin-bottom: 36px;
+            // animation: slide-up 500ms 150ms both ease-in-out;
             .menu__block--title {
                 margin-left: 6px;
                 margin-bottom: 24px;
@@ -107,6 +117,7 @@ header {
                 transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
                 position: relative;
                 overflow: hidden;
+                // animation: slide-up 500ms 150ms both ease-in-out;
                 
                 .menu__item--description {
                     background-color: white;
@@ -176,6 +187,10 @@ header {
                     transition: 0.5s ease;
                 }
             }
+            @keyframes slide-up {
+                0% { transform: translateY(20px); opacity: 0; }
+                100% { transform: translateY(0px); opacity: 1; }
+            }
             @keyframes rotate {
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
@@ -184,6 +199,10 @@ header {
                 0% { transform: scaleX(0); }
                 100% { transform: scaleX(-50px); }
             }
+        }
+        @keyframes slide-up {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0px); opacity: 1; }
         }
     }
     .menu__button {
@@ -222,30 +241,7 @@ header {
 }
 
 
-// .footer__container {
-//     padding: 20px;
-//     background-color: #333333;
-//     color: white;
-//     .footer__logo a {
-//         color: white;
-//         font-family: 'Shrikhand', cursive;
-//     }
-//     .footer__items {
-//         margin: 20px 0 12px 0;
-//         .footer__item {
-//             display: flex;
-//             margin-bottom: 4px;
-//             a {
-//                 color: white;
-//             }
-//             .footer__item-icon {
-//                 width: 20px;
-//                 height: 20px;
-//                 margin-right: 10px;
-//             }
-//         }
-//     }
-// }
+
 
 .footer__container {
     padding: 25px;

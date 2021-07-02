@@ -47,6 +47,10 @@ a {
     visibility: visible;
     opacity: 1;
   }
+  70% {
+    visibility: hidden;
+    opacity: 0.8;
+  }
   100% {
     -webkit-transform: rotate(720deg);
             transform: rotate(720deg);
@@ -60,6 +64,10 @@ a {
             transform: rotate(0deg);
     visibility: visible;
     opacity: 1;
+  }
+  70% {
+    visibility: hidden;
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: rotate(720deg);
@@ -368,19 +376,49 @@ a {
 }
 
 .restaurants__container .restaurant__cards .restaurant__card .restaurant__card-block .restaurant__heart i {
-  color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  font-size: 24px;
+  font-weight: 100;
+  background: black;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurants__container .restaurant__cards .restaurant__card .restaurant__card-block .restaurant__heart .heart-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 .restaurants__container .restaurant__cards .restaurant__card .restaurant__card-block .restaurant__heart i:hover {
-  color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-animation: fill-the-heart 500ms 50ms both ease-in-out;
+          animation: fill-the-heart 500ms 50ms both ease-in-out;
 }
 
-.restaurants__container .restaurant__cards .restaurant__card .restaurant__card-block .restaurant__heart svg {
-  color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+@-webkit-keyframes fill-the-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-.restaurants__container .restaurant__cards .restaurant__card .restaurant__card-block .restaurant__heart svg:hover {
-  color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+@keyframes fill-the-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .restaurants__container .restaurant__cards .restaurant__card:hover {
@@ -507,12 +545,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .restaurants__container .restaurant__cards a {
-    width: 40%;
-    margin: 24px;
-  }
   .restaurants__container .restaurant__cards .restaurant__card {
-    margin-bottom: 0;
+    width: 40%;
+    margin: 16px;
   }
   footer {
     background-color: #333333;

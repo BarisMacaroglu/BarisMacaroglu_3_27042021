@@ -48,6 +48,7 @@ $tertiary-color : #99E2D0;
   }
   @keyframes spin {
     0% { transform: rotate(0deg); visibility: visible; opacity: 1; }
+    70% { visibility: hidden; opacity: 0.8; }
     100% { transform: rotate(720deg); opacity: 0; }
   }
 
@@ -253,47 +254,34 @@ $tertiary-color : #99E2D0;
                     // font-weight: 100;
                     margin-right: 10px;
                     i {
-                        // font-weight: 100;
-                        // box-shadow: 1px 5px 10px rgba(0,0,0,0.14);
-                        // transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
-                        // font-weight: 100;
-                        // transition: font-weight 1s;
-                        color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+                        font-size: 24px;
+                        font-weight: 100;
+                        // color: black;
+                        // background: -webkit-linear-gradient($secondary-color, $primary-color);
+                        background: black;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    
+                    .heart-img {
+                        // width: 25px;
+                        // background-color: blue;
+                        // color: red;
+                        background-image: linear-gradient($secondary-color, $primary-color);
                     }
                     i:hover {
-                        // background-color: blue;
-                        // color: $primary-color;
-                        // color: linear-gradient($primary-color, $secondary-color);
-                        // background-image: linear-gradient($secondary-color, $primary-color);
-                        // font-weight: 900;
-                        // transition: background-image 0.3s cubic-bezier(.25,.8,.25,1), background-image 0.3s;
-                        // background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-                        color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-                    }
-                    svg {
-                        // font-weight: 100;
-                        // box-shadow: 1px 5px 10px rgba(0,0,0,0.14);
-                        // transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
-                        // font-weight: 100;
-                        // transition: font-weight 1s;
-                        // color: blue;
-                        // border: 2px solid blue;
-                        color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-                        
-                    }
-                    svg:hover {
-                        // background-color: blue;
-                        // color: $primary-color;
-                        // color: linear-gradient($primary-color, $secondary-color);
-                        // background-image: linear-gradient($secondary-color, $primary-color);
-                        // font-weight: 900;
-                        // background-color: green;
-                        // background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-                        color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-                        // transition: background-image 0.3s cubic-bezier(.25,.8,.25,1), background-image 0.3s;
+                        // background: -webkit-linear-gradient($secondary-color, $primary-color);
+                        // background-clip: text;
+                        // -webkit-text-fill-color: transparent;
+
+                        animation: fill-the-heart 500ms 50ms both ease-in-out;
                     }
                 }
             }
+        }
+        @keyframes fill-the-heart {
+            0% { opacity: 0; }
+            100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent;}
         }
         .restaurant__card:hover {
             // color: $primary-color;
@@ -380,16 +368,9 @@ $tertiary-color : #99E2D0;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            // width: 300px;
-            // height: 50px;
-            a {
-                // width: 300px;
-                width: 40%;
-                // height: 300px;
-                margin: 24px;
-            }
             .restaurant__card {
-                margin-bottom: 0;
+                width: 40%;
+                margin: 16px;
             }
         }
     }

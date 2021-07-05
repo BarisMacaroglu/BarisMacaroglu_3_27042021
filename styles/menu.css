@@ -279,25 +279,37 @@ header .header__logo {
   font-weight: bold;
   margin-right: 12px;
   margin-left: 12px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__checkbox {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   background: #99E2D0;
   border-radius: 0;
   height: 100%;
   padding: 0 15px;
-  right: 0;
+  right: -50px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__checkbox i {
   color: white;
   font-size: 20px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-animation: rotate 0.5s both;
-          animation: rotate 0.5s both;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:active {
@@ -311,25 +323,22 @@ header .header__logo {
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover .menu__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-animation: right-to-left 0.5s ease-in;
-          animation: right-to-left 0.5s ease-in;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.menu__container .menu__blocks .menu__block .menu__item:hover .menu__checkbox i {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover .menu__item--price {
-  padding-right: 50px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 @-webkit-keyframes slide-up {
@@ -355,50 +364,6 @@ header .header__logo {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes right-to-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
-}
-
-@keyframes right-to-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
   }
 }
 
@@ -601,6 +566,7 @@ header .header__logo {
   }
   .menu__container .menu__blocks .menu__block .menu__item {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=menu.css.map */

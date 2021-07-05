@@ -183,22 +183,28 @@ header {
                             font-weight: bold;
                             margin-right: 12px;
                             margin-left: 12px;
+                            transition: transform 0.5s ease-in-out;
                         }
                     }
                 }
                 .menu__checkbox {
-                    display: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     position: absolute;
                     background: $tertiary-color;
                     border-radius: 0;
                     height: 100%;
                     padding: 0 15px;
-                    right: 0;
+                    right: -50px;
+                    // For the green checkbox to return smoothly after :hover, 'transition' isn't in :hover but in the base class
+                    transition: transform 0.5s ease-in-out;
                     i {
                         color: white;
                         font-size: 20px;
-                        transform: rotate(180deg);
-                        animation: rotate 0.5s both;
+                        // transform: rotate(180deg);
+                        // animation: rotate 0.5s both;
+                        // transition: transform 0.5s ease-in-out;
                     }
                 }
             }
@@ -209,29 +215,31 @@ header {
                 // box-shadow: 15px 25px 30px rgba(0,0,0,0.14);
                 box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
                 .menu__checkbox {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transform-origin: right;
-                    animation: right-to-left 0.5s ease-in;
+                    // transform-origin: right;
+                    // animation: right-to-left 0.5s ease-in;
+                    transform: translateX(-50px);
+                    i {
+                        // Don't write 'transition' in :hover unless you want the effect to end instantly after :hover.
+                        transition: transform 0.5s ease-in-out;
+                        transform: rotate(360deg);
+                    }
                 }
                 .menu__item--price {
-                    padding-right: 50px;
-                    transition: 0.5s ease;
+                    transform: translateX(-50px);
                 }
             }
             @keyframes slide-up {
                 0% { transform: translateY(20px); opacity: 0; }
                 100% { transform: translateY(0px); opacity: 1; }
             }
-            @keyframes rotate {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-            }
-            @keyframes right-to-left {
-                0% { transform: scaleX(0); }
-                100% { transform: scaleX(-50px); }
-            }
+            // @keyframes rotate {
+            //     0% { transform: rotate(0deg); }
+            //     100% { transform: rotate(360deg); }
+            // }
+            // @keyframes right-to-left {
+            //     0% { transform: translateX(0); }
+            //     100% { transform: translateX(-50px); }
+            // }
         }
         @keyframes slide-up {
             0% { transform: translateY(20px); opacity: 0; }
@@ -386,6 +394,7 @@ header {
                 width: 30%;
                 .menu__item {
                     width: 100%;
+                    margin-bottom: 20px;
                 }
             }
         }

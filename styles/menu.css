@@ -97,6 +97,78 @@ header .header__logo {
   font-size: 27px;
 }
 
+.menu__container .menu__header .menu__header--heart {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu__container .menu__header .menu__header--heart i {
+  font-size: 24px;
+  font-weight: 100;
+  background: black;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__container .menu__header .menu__header--heart i:hover {
+  -webkit-animation: fill-the-heart 500ms 50ms both ease-in-out;
+          animation: fill-the-heart 500ms 50ms both ease-in-out;
+}
+
+.menu__container .menu__header .menu__header--heart:active {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-animation: rotate-the-heart 400ms 0ms both ease-in-out;
+          animation: rotate-the-heart 400ms 0ms both ease-in-out;
+}
+
+@-webkit-keyframes fill-the-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes fill-the-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@-webkit-keyframes rotate-the-heart {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotate-the-heart {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
 .menu__container .menu__blocks #block-1 {
   -webkit-animation: slide-up 500ms 150ms both ease-in-out;
           animation: slide-up 500ms 150ms both ease-in-out;

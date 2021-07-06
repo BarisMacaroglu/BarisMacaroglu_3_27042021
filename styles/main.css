@@ -400,13 +400,18 @@ a {
 }
 
 .restaurants__container .restaurant__cards .restaurant__card .restaurant__heart i:hover {
-  -webkit-animation: fill-the-heart 500ms 50ms both ease-in-out;
-          animation: fill-the-heart 500ms 50ms both ease-in-out;
+  -webkit-animation: fill-the-heart 500ms both ease-in-out;
+          animation: fill-the-heart 500ms both ease-in-out;
 }
 
 @-webkit-keyframes fill-the-heart {
   0% {
-    opacity: 1;
+    opacity: 0.6;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     opacity: 1;
@@ -420,7 +425,12 @@ a {
 
 @keyframes fill-the-heart {
   0% {
-    opacity: 1;
+    opacity: 0.6;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     opacity: 1;

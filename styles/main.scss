@@ -278,12 +278,12 @@ $tertiary-color : #99E2D0;
                     // background-clip: text;
                     // -webkit-text-fill-color: transparent;
 
-                    animation: fill-the-heart 500ms 50ms both ease-in-out;
+                    animation: fill-the-heart 500ms both ease-in-out;
                 }
             }
         }
         @keyframes fill-the-heart {
-            0% { opacity: 1; }
+            0% { opacity: 0.6; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent; }
             100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent;}
         }
         .restaurant__card:hover {

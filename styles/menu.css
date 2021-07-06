@@ -112,8 +112,8 @@ header .header__logo {
 }
 
 .menu__container .menu__header .menu__header--heart i:hover {
-  -webkit-animation: fill-the-heart 500ms 50ms both ease-in-out;
-          animation: fill-the-heart 500ms 50ms both ease-in-out;
+  -webkit-animation: fill-the-heart 500ms both ease-in-out;
+          animation: fill-the-heart 500ms both ease-in-out;
 }
 
 .menu__container .menu__header .menu__header--heart:active {
@@ -125,7 +125,12 @@ header .header__logo {
 
 @-webkit-keyframes fill-the-heart {
   0% {
-    opacity: 0;
+    opacity: 0.6;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     opacity: 1;
@@ -139,7 +144,12 @@ header .header__logo {
 
 @keyframes fill-the-heart {
   0% {
-    opacity: 0;
+    opacity: 0.6;
+    font-weight: 900;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     opacity: 1;

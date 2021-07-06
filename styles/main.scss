@@ -283,7 +283,7 @@ $tertiary-color : #99E2D0;
             }
         }
         @keyframes fill-the-heart {
-            0% { opacity: 0; }
+            0% { opacity: 1; }
             100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent;}
         }
         .restaurant__card:hover {

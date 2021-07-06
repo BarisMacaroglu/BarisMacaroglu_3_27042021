@@ -406,7 +406,7 @@ a {
 
 @-webkit-keyframes fill-the-heart {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -420,7 +420,7 @@ a {
 
 @keyframes fill-the-heart {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 1;

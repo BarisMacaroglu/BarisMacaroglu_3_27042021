@@ -94,6 +94,10 @@ $tertiary-color : #99E2D0;
         font-size: 16px;
         padding: 10px 0 10px;
     }
+    .location__city:focus {
+        outline: none;
+        border-bottom: 3px solid $primary-color;
+    }
 }
 
 .exploration__container {
@@ -136,8 +140,10 @@ $tertiary-color : #99E2D0;
 }
 
 .process__container {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    margin: 16px 0;
+    margin: 16px auto;
     .process__title {
         padding: 12px 0 6px 0;
         margin-bottom: 24px;
@@ -345,23 +351,18 @@ $tertiary-color : #99E2D0;
     }
 
     .process__container {
-        display: flex;
-        flex-direction: column;
         .process__title {
             display: flex;
             justify-content: center;
-            
         }
         .process__steps {
+            width: 100%;
+            max-width: 550px;
             display: flex;
-            justify-content: space-around;
-            .process__step {
-                display: flex;
-                width: 25%;
-            }
+            flex-direction: column;
+            align-self: center;
         }
     }
-
     #restaurants {
         background-color: #F1F1F1;
     }
@@ -416,6 +417,23 @@ $tertiary-color : #99E2D0;
                 // .footer__item-icon {
 
                 // }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .process__container {
+        .process__steps {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: none;
+            width: 100%;
+            .process__step {
+                display: flex;
+                width: 25%;
+                max-width: 300px;
             }
         }
     }

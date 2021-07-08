@@ -150,14 +150,14 @@ header {
                 transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
                 position: relative;
                 overflow: hidden;
+                background-color: white;
                 // animation: slide-up 500ms 150ms both ease-in-out;
                 
                 .menu__item--description {
-                    background-color: white;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    width: 100%;
+                    width: 90%;
                     padding: 10px;
                     border-radius: 12px;
                     height: 40px;
@@ -177,12 +177,13 @@ header {
                             overflow: hidden;
                             text-overflow: ellipsis;
                             max-width: 250px;
+                            margin-right: 12px;
                         }
                         .menu__item--price {
                             font-size: 14px;
                             font-weight: bold;
-                            margin-right: 12px;
-                            margin-left: 12px;
+                            margin-right: 0px;
+                            margin-left: 0px;
                             // transition: transform 0.5s ease-in-out;
                             transition: 0.5s ease-in-out;
                         }

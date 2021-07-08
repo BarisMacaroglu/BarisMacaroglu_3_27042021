@@ -239,10 +239,10 @@ header .header__logo {
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.3s, -webkit-box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
   overflow: hidden;
+  background-color: white;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__item--description {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +253,7 @@ header .header__logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border-radius: 12px;
   height: 40px;
@@ -282,13 +282,14 @@ header .header__logo {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 250px;
+  margin-right: 12px;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__item--description .menu__item--sub .menu__item--price {
   font-size: 14px;
   font-weight: bold;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 0px;
+  margin-left: 0px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }

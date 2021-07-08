@@ -289,10 +289,8 @@ header .header__logo {
   font-weight: bold;
   margin-right: 12px;
   margin-left: 12px;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__checkbox {
@@ -347,8 +345,7 @@ header .header__logo {
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover .menu__item--price {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  padding-right: 50px;
 }
 
 @-webkit-keyframes slide-up {

@@ -26,9 +26,6 @@ a {
   margin: auto;
   position: fixed;
   z-index: 50;
-}
-
-.spinner {
   border: 16px solid #9356DC;
   border-radius: 50%;
   border-top: 16px solid #FF79DA;
@@ -86,7 +83,7 @@ a {
     visibility: hidden;
     opacity: 0;
   }
-  80% {
+  90% {
     visibility: hidden;
     opacity: 0;
   }
@@ -101,7 +98,7 @@ a {
     visibility: hidden;
     opacity: 0;
   }
-  80% {
+  90% {
     visibility: hidden;
     opacity: 0;
   }
@@ -537,7 +534,13 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-  header, main {
+  header {
+    margin: 0 auto;
+  }
+  main {
+    margin: 0 auto;
+  }
+  .process {
     max-width: 1480px;
     margin: 0 auto;
   }

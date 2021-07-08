@@ -167,6 +167,9 @@ header {
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        max-width: 250px;
+                        margin-right: 6px;
+                        transition: 0.5s ease-in-out;
                     }
                     .menu__item--sub {
                         display: flex;
@@ -225,6 +228,9 @@ header {
                         transition: transform 0.5s ease-in-out;
                         transform: rotate(360deg);
                     }
+                }
+                .menu__item--name {
+                    margin-right: 50px;
                 }
                 .menu__item--price {
                     // transform: translateX(-50px);

@@ -265,6 +265,10 @@ header .header__logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 250px;
+  margin-right: 6px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item .menu__item--description .menu__item--sub {
@@ -343,6 +347,10 @@ header .header__logo {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.menu__container .menu__blocks .menu__block .menu__item:hover .menu__item--name {
+  margin-right: 50px;
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover .menu__item--price {

@@ -57,6 +57,7 @@ $tertiary-color : #99E2D0;
   }
   @keyframes post-spin {
     0% { visibility: hidden; opacity: 0; }
+    80% { visibility: hidden; opacity: 0; }
     100% { visibility: visible; opacity: 1; }
   }
 

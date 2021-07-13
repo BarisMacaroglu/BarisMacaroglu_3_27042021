@@ -167,7 +167,7 @@ header {
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        max-width: 250px;
+                        max-width: 270px;
                         margin-right: 6px;
                         transition: 0.5s ease-in-out;
                     }
@@ -217,8 +217,8 @@ header {
                 transform: translateY(4px);
             }
             .menu__item:hover {
-                // box-shadow: 15px 25px 30px rgba(0,0,0,0.14);
-                box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+                // box-shadow: 0 14px 28px rgba(0,0,0,0.14);
+                box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25);
                 .menu__checkbox {
                     // transform-origin: right;
                     // animation: right-to-left 0.5s ease-in;
@@ -336,15 +336,11 @@ header {
     }
 
     .footer__container {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         max-width: 1480px;
         margin: 0 auto;
         .footer__logo {
             display: flex;
             justify-content: center;
-            // margin: 0 50px 0 20px;
         }
         .footer__items {
             display: flex;
@@ -356,7 +352,6 @@ header {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                // margin: 12px;
                 margin: 0;
                 .footer__item-icon {
                     margin: 5px;
@@ -370,7 +365,6 @@ header {
 @media screen and (min-width: 1100px) {
     .menu__container {
         max-width: 1200px;
-        // margin: 0 50px;
         .menu__header {
             justify-content: space-between;
         }

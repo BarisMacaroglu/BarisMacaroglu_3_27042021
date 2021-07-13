@@ -265,7 +265,7 @@ header .header__logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 250px;
+  max-width: 270px;
   margin-right: 6px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -331,8 +331,8 @@ header .header__logo {
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25);
+          box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25);
 }
 
 .menu__container .menu__blocks .menu__block .menu__item:hover .menu__checkbox {

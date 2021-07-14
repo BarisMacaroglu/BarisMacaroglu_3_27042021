@@ -1,3 +1,5 @@
+// ------- Mobile First ------------
+
 * {
     margin: 0;
     padding: 0;
@@ -156,9 +158,6 @@ $tertiary-color : #99E2D0;
             box-shadow: 1px 3px 10px 4px rgba(0,0,0,0.14);
             transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
         }
-        // .process__step:active {
-        //     transform: translateY(4px);
-        // }
         .process__step:hover {
             box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
@@ -214,8 +213,6 @@ $tertiary-color : #99E2D0;
             transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), color 0.3s;
             position: relative;
             .restaurant__card-image {
-                // max-width: 100%;
-                // max-height: 100px;
                 display: flex;
                 flex-direction: column;
                 position: relative;
@@ -253,7 +250,6 @@ $tertiary-color : #99E2D0;
             }
             .restaurant__heart {
                 font-size: 24px;
-                // font-weight: 100;
                 margin-right: 10px;
                 position: absolute;
                 right: 16px;
@@ -261,7 +257,6 @@ $tertiary-color : #99E2D0;
                 i {
                     font-size: 24px;
                     font-weight: 100;
-                    // color: black;
                     // background: -webkit-linear-gradient($secondary-color, $primary-color);
                     background: black;
                     background-clip: text;
@@ -281,7 +276,6 @@ $tertiary-color : #99E2D0;
             100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent;}
         }
         .restaurant__card:hover {
-            // color: $primary-color;
             box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
         // .restaurant__card:active {
@@ -336,6 +330,9 @@ $tertiary-color : #99E2D0;
         }
     }
 }
+
+
+// Si la largeur d'écran dépasse 600px : 
 
 @media screen and (min-width: 600px) {
 
@@ -414,6 +411,9 @@ $tertiary-color : #99E2D0;
         }
     }
 }
+
+
+// Si la largeur d'écran dépasse 1100px : 
 
 @media screen and (min-width: 1100px) {
     .process__container {

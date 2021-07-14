@@ -1,3 +1,5 @@
+// ------- Mobile First ------------
+
 * {
     margin: 0;
     padding: 0;
@@ -220,7 +222,6 @@ header {
                 // box-shadow: 0 14px 28px rgba(0,0,0,0.14);
                 box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25);
                 .menu__checkbox {
-                    // transform-origin: right;
                     // animation: right-to-left 0.5s ease-in;
                     transform: translateX(-50px);
                     i {
@@ -236,10 +237,6 @@ header {
                     // transform: translateX(-50px);
                     padding-right: 50px;
                 }
-            }
-            @keyframes slide-up {
-                0% { transform: translateY(20px); opacity: 0; }
-                100% { transform: translateY(0px); opacity: 1; }
             }
         }
         @keyframes slide-up {
@@ -270,7 +267,6 @@ header {
             background-image: linear-gradient($secondary-color, $primary-color);
         }
         button:hover {
-            // box-shadow: 15px 25px 30px 30px rgba(0,0,0,0.14);
             // box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
             box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.14);
             background-image: linear-gradient(#f789d7, #af77f3);
@@ -317,6 +313,8 @@ header {
     }
 }
 
+// Si la largeur d'écran dépasse 600px : 
+
 @media screen and (min-width: 600px) {
     header, main {
         max-width: 1480px;
@@ -361,6 +359,8 @@ header {
         }
     }
 }
+
+// Si la largeur d'écran dépasse 1100px : 
 
 @media screen and (min-width: 1100px) {
     .menu__container {

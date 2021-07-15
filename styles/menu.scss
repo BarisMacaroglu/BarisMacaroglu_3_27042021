@@ -169,7 +169,7 @@ header {
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        max-width: 270px;
+                        max-width: 300px;
                         margin-right: 6px;
                         transition: 0.5s ease-in-out;
                     }
@@ -308,6 +308,10 @@ header {
             .footer__item-text {
                 display: flex;
                 align-items: center;
+                cursor: pointer;
+                :hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

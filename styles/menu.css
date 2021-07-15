@@ -106,9 +106,7 @@ header .header__logo {
 .menu__container .menu__header .menu__header--heart i {
   font-size: 24px;
   font-weight: 100;
-  background: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .menu__container .menu__header .menu__header--heart i:hover {
@@ -131,6 +129,7 @@ header .header__logo {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   100% {
     opacity: 1;
@@ -139,6 +138,7 @@ header .header__logo {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 }
 
@@ -150,6 +150,7 @@ header .header__logo {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   100% {
     opacity: 1;
@@ -158,6 +159,7 @@ header .header__logo {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 }
 

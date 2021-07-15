@@ -399,9 +399,7 @@ a {
 .restaurants__container .restaurant__cards .restaurant__card .restaurant__heart i {
   font-size: 24px;
   font-weight: 100;
-  background: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .restaurants__container .restaurant__cards .restaurant__card .restaurant__heart i:hover {
@@ -417,6 +415,7 @@ a {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   100% {
     opacity: 1;
@@ -425,6 +424,7 @@ a {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 }
 
@@ -436,6 +436,7 @@ a {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   100% {
     opacity: 1;
@@ -444,6 +445,7 @@ a {
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 }
 

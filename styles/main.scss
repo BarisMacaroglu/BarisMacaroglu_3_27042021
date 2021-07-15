@@ -258,9 +258,9 @@ $tertiary-color : #99E2D0;
                     font-size: 24px;
                     font-weight: 100;
                     // background: -webkit-linear-gradient($secondary-color, $primary-color);
-                    background: black;
+                    // background: black;
                     background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    // -webkit-text-fill-color: transparent;
                 }
                 i:hover {
                     // background: -webkit-linear-gradient($secondary-color, $primary-color);
@@ -272,8 +272,8 @@ $tertiary-color : #99E2D0;
             }
         }
         @keyframes fill-the-heart {
-            0% { opacity: 0.6; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent; }
-            100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent;}
+            0% { opacity: 0.6; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent; -webkit-background-clip: text; }
+            100% { opacity: 1; font-weight: 900; font-size: 24px; background: -webkit-linear-gradient($secondary-color, $primary-color); background-clip: text; -webkit-text-fill-color: transparent; -webkit-background-clip: text;}
         }
         .restaurant__card:hover {
             box-shadow: 0 14px 28px rgba(157, 184, 209, 0.25), 0 10px 10px rgba(0,0,0,0.22);
